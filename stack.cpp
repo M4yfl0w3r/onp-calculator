@@ -65,8 +65,3 @@ std::ostream& operator << (std::ostream& stream, Stack<T> const& s)
 	return stream;
 }
 
-
-
-
-
-

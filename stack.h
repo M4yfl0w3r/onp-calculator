@@ -25,4 +25,3 @@ struct Stack
 // template <typename G>
 // std::ostream& operator << (std::ostream& stream, Stack<G> const& Stack);
 
-

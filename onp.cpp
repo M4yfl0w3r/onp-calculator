@@ -136,3 +136,4 @@ void Onp::transform_n_calculate(std::string equation, Stack<char>& operator_stac
 
 	std::cout << '\n';
 }
+

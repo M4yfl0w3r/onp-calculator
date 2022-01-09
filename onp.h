@@ -18,6 +18,3 @@ public:
 		Stack<double>& number_stack);
 };
 
-
-
-
