@@ -8,13 +8,13 @@ template<typename T>
 struct Node
 {
 	T element;
-  std::shared_ptr< Node<T> > next;	
+    std::shared_ptr< Node<T> > next;	
 };
 
 template<typename T>
 struct Stack 
 {	
-  std::shared_ptr< Node<T> > top = 0;
+    std::shared_ptr< Node<T> > top = 0;
 
 	void push(T value);
 	T pop();
