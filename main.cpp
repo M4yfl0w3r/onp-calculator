@@ -15,9 +15,7 @@ int main()
 
 	std::cout << "Enter the equation (infix form): ";	
 	std::getline(std::cin, onp.equation);
-	
-	onp.equation.erase(std::remove_if(onp.equation.begin(), 
-		onp.equation.end(), ::isspace), onp.equation.end());
+	onp.equation.erase(std::remove_if(onp.equation.begin(), onp.equation.end(), ::isspace), onp.equation.end());
 	
 	std::cout << "ONP form: ";
 

@@ -1,12 +1,9 @@
-#include <iostream>
-#include <stdexcept>
-
 #include "stack.h"
 
 template<typename T>
 void Stack<T>::push(T value)
 {
-	struct Node<T>* new_node = new Node<T>;	
+  std::shared_ptr< Node<T> > new_node = std::make_shared< Node<T> >();
 
 	new_node -> element = value;
 
@@ -20,15 +17,13 @@ T Stack<T>::pop()
 {
 	if (top != NULL)
 	{
-		struct Node<T>* tmp_top = top;
+    std::shared_ptr< Node<T> > tmp_top = top;
 
 		top = top -> next;
 
 		tmp_top -> next = NULL;
 	
 		T tmp_val = tmp_top -> element;
-
-		delete tmp_top;
 
 		return tmp_val;
 	}
@@ -46,22 +41,5 @@ template<typename T>
 T Stack<T>::get_top()
 {
 	return top -> element;
-}
-
-template<typename T>
-std::ostream& operator << (std::ostream& stream, Stack<T> const& s)
-{
-	if (s.top != NULL)	
-	{
-		struct Node<T>* tmp = s.top;
-
-		while (tmp != NULL)
-		{
-			stream << tmp -> element << ' ';
-			tmp = tmp -> next;
-		}
-	}
-
-	return stream;
 }
 
