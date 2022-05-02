@@ -1,7 +1,6 @@
 #pragma once
 
 #include "stack.h"
-#include "stack.cpp"
 
 class Onp
 {
@@ -14,7 +13,6 @@ public:
 	char operation = '\0';
 	int priority = 0;
 
-	void transform_n_calculate(std::string equation, Stack<char>& operator_stack, 
-		Stack<double>& number_stack);
+	void transform_n_calculate(std::string equation, Stack<char>& operator_stack, Stack<double>& number_stack);
 };
 

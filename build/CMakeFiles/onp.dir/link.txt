@@ -1,0 +1,2 @@
+/usr/bin/ar qc libonp.a CMakeFiles/onp.dir/src/onp.cpp.o CMakeFiles/onp.dir/src/stack.cpp.o
+/usr/bin/ranlib libonp.a

@@ -1,10 +1,5 @@
-#include <iostream>
-#include <cstring>
-#include <cctype>
-#include <algorithm>
-
-#include "onp.h"
-#include "stack.h"
+#include "../include/onp.h"
+#include "../include/stack.h"
 
 int main()
 {

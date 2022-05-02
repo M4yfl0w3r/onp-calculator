@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall CMakeFiles/onp_run.dir/src/main.cpp.o -o onp_run  libonp.a 

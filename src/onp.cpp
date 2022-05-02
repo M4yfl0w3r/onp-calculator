@@ -1,9 +1,6 @@
-#include <iostream>
-#include <stdlib.h>
-#include <string>
-#include <math.h>
-
-#include "onp.h"
+#include "../include/onp.h"
+#include "../include/stack.h"
+#include "stack.cpp"
 
 int Onp::check_priority(char c)
 {
@@ -39,7 +36,7 @@ void Onp::calculate(char operation, Stack<double>& number_stack)
 	switch (operation)	
 	{	
 		case '^':
-			number_stack.push(pow(a, b));
+			number_stack.push(std::pow(a, b));
 			break;
 
 		case '*': 
@@ -65,7 +62,7 @@ void Onp::calculate(char operation, Stack<double>& number_stack)
 
 void Onp::transform_n_calculate(std::string equation, Stack<char>& operator_stack, Stack<double>& number_stack)
 {	
-	for (int i=0; equation[i] != '\0'; i++)
+	for (int i = 0; equation[i] != '\0'; i++)
 	{
 		if (isdigit(equation[i]))
 		{
