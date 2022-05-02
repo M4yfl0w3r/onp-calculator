@@ -250,7 +250,8 @@ CMakeFiles/onp.dir/src/onp.cpp.o: ../src/onp.cpp \
   /usr/include/c++/11.2.0/bits/atomic_base.h \
   /usr/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11.2.0/backward/auto_ptr.h \
-  /usr/include/c++/11.2.0/pstl/glue_memory_defs.h
+  /usr/include/c++/11.2.0/pstl/glue_memory_defs.h \
+  ../src/stack.cpp
 
 CMakeFiles/onp.dir/src/stack.cpp.o: ../src/stack.cpp \
   /usr/include/stdc-predef.h \
