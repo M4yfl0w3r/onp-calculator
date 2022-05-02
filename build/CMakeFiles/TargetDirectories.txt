@@ -1,4 +1,0 @@
-/home/hope/Code/onp-calculator/build/CMakeFiles/onp.dir
-/home/hope/Code/onp-calculator/build/CMakeFiles/onp_run.dir
-/home/hope/Code/onp-calculator/build/CMakeFiles/edit_cache.dir
-/home/hope/Code/onp-calculator/build/CMakeFiles/rebuild_cache.dir
